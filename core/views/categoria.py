@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+
 from core.models import Categoria
 from core.serializers import CategoriaSerializer
 
