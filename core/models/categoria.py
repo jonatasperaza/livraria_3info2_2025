@@ -5,6 +5,7 @@ class Categoria(models.Model):
     """
     Model representing a category.
     """
+
     descricao = models.CharField(max_length=100, unique=True, verbose_name='Descrição')
 
     class Meta:
@@ -12,4 +13,4 @@ class Categoria(models.Model):
         verbose_name_plural = 'Categorias'
 
     def __str__(self):
-        return f"Descrição da Categoria: ({self.id})-{self.descricao.lower()}"
+        return f'Descrição da Categoria: ({self.id})-{self.descricao.lower()}'

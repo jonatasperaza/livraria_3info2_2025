@@ -8,5 +8,6 @@ class CategoriaViewSet(viewsets.ModelViewSet):
     """
     ViewSet for the Categoria model.
     """
+
     queryset = Categoria.objects.all()
     serializer_class = CategoriaSerializer
